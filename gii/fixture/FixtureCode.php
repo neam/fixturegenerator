@@ -48,7 +48,7 @@ class FixtureCode extends CCodeModel
 		Yii::import($this->modelPath);
 		$path = Yii::getPathOfAlias($this->modelPath);
 		$this->scandir($path);
-		$templatePath = Yii::getPathOfAlias('application.gii.fixture.templates.default');
+		$templatePath = Yii::getPathOfAlias('ext.fixturegenerator.gii.fixture.templates.default');
 		$tableNames = array();
 		foreach ($this->_models as $modelName)
 		{
